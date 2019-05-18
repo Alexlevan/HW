@@ -33,6 +33,7 @@ public class HW_1 {
             newMonth = ++month;
             newYear = year;
         } else{
+            return false;
 
         }
 
