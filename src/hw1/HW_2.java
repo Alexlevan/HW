@@ -34,19 +34,19 @@ public class HW_2 {
         public static boolean isFit(double aSide, double bSide, double cSide, double dSide, double eSide, double fSide){
 
         if (eSide >= aSide && eSide >= cSide && fSide >= (bSide + dSide)){
-            return true;
+      
         } else if (eSide >= aSide && eSide >= dSide && fSide >= (bSide + cSide)){
-            return true;
+            
         } else if (eSide >= bSide && eSide >= dSide && fSide >= (aSide + cSide)){
-            return true;
+            
         } else if (fSide >= aSide && fSide >= cSide && eSide >= (bSide + dSide)){
-            return true;
+            
         } else if (fSide >= bSide && fSide >= cSide && eSide >= (aSide + dSide)){
-            return true;
+            
         } else if (fSide >= aSide && fSide >= dSide && eSide >= (bSide + cSide)){
-            return true;
+            
         } else if (fSide >= bSide && fSide >= dSide && eSide >= (aSide + cSide)){
-                return true;
+                
             } else {
                     return false;
                 }
