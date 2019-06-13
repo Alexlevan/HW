@@ -8,18 +8,19 @@ import java.util.Arrays;
 public class HW_3_1 {
     public static void main(String[] args) {
         int[] array = {1, 2, 3, 15, 25, 34, 55, 60, 12, 30};
-
-        for (int i = 0; i < array.length - 1; i++) {
-
-            swap(array, i, i + 1);
+        trade(array);
+        System.out.println(Arrays.toString(array));
         }
 
-        System.out.println(Arrays.toString(array));
-    }
-
-    public static void swap(int[] array, int fst, int snd) {
-        int tmp = array[fst];
-        array[fst] = array[snd];
-        array[snd] = tmp;
+    public static void trade(int[] array) {
+        int a = array.length;
+        if (a <= 1) {
+            return;
+        }
+        int lastItem= array[a - 1];
+        for (int i = a - 1; i > 0; i--) {
+            array[i] = array[i - 1];
+        }
+        array[0] = lastItem;
     }
 }
